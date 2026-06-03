@@ -1,0 +1,155 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Athenian Blade | Premium Barbershop in Athens",
+      "description": "Classic barbering, premium grooming and online reservations for modern men in Greece."
+    }
+  },
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "gallery": "Gallery",
+    "reservations": "Reservations",
+    "contact": "Contact",
+    "book": "Book"
+  },
+  "hero": {
+    "eyebrow": "Premium barbershop in Athens",
+    "title": "Sharp craft. Quiet luxury.",
+    "subtitle": "At Athenian Blade every haircut, shave and grooming ritual is delivered with precision, cleanliness and respect for your time.",
+    "book": "Book appointment",
+    "services": "View services"
+  },
+  "home": {
+    "servicesEyebrow": "Signature services",
+    "servicesTitle": "Grooming with character",
+    "servicesIntro": "From a clean fade to a traditional shave, each service is designed for polished results and a consistent experience.",
+    "services": {
+      "haircut": {"title": "Haircut", "description": "Consultation, wash, precision cut and styling."},
+      "beard": {"title": "Beard Trim", "description": "Beard shaping with hot towel finish and balm."},
+      "shave": {"title": "Traditional Shave", "description": "Classic razor shave with calming aftercare."},
+      "package": {"title": "Premium Grooming", "description": "Complete haircut, beard work, shave and styling."}
+    },
+    "aboutEyebrow": "Why choose us",
+    "aboutTitle": "Discipline, craft, atmosphere",
+    "aboutIntro": "A space built for people who value consistent quality, clean lines and personal service.",
+    "why": {
+      "craft": {"title": "Master craft", "text": "Barbers experienced in fades, scissor cuts, beard design and classic shaving."},
+      "hygiene": {"title": "Strict hygiene", "text": "Sterilized tools, clean stations and premium products for every appointment."},
+      "experience": {"title": "Easy booking", "text": "Choose service, barber, date and time in a few focused steps."}
+    }
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "Details you can see",
+    "intro": "Selected looks, textures and grooming moments from the shop.",
+    "items": ["Fade haircut", "Classic station", "Beard shaping", "Barber tools"]
+  },
+  "testimonials": {
+    "eyebrow": "Google reviews",
+    "title": "Reliable appointments, reliable results",
+    "intro": "Clients return for the precision, atmosphere and clear service.",
+    "items": [
+      {"quote": "Excellent work, serious attention to detail and a beautiful space.", "name": "George M."},
+      {"quote": "The best beard trim I have had. I book online every time now.", "name": "Panagiotis K."},
+      {"quote": "Premium experience without the noise. On time and very professional.", "name": "Nikos A."}
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Find us in central Athens",
+    "intro": "Book online, message us on WhatsApp or visit the shop.",
+    "address": "25 Solonos Street, Athens 106 73",
+    "hours": {
+      "weekdays": "Monday - Friday: 10:00 - 20:00",
+      "saturday": "Saturday: 10:00 - 18:00",
+      "sunday": "Sunday: Closed"
+    }
+  },
+  "footer": {
+    "tagline": "Premium barber shop experience with Greek hospitality, European precision and modern online booking.",
+    "services": "Services",
+    "reservations": "Reservations",
+    "contact": "Contact"
+  },
+  "cookies": {
+    "text": "We use essential cookies for functionality, language preference and experience improvements under GDPR.",
+    "accept": "Accept"
+  },
+  "servicesPage": {
+    "eyebrow": "Services",
+    "title": "Price list",
+    "intro": "Transparent prices, service duration and direct access to online booking.",
+    "cta": "Book service",
+    "items": {
+      "haircut": {"title": "Haircut", "description": "Haircut with consultation, wash and everyday-ready styling."},
+      "beard": {"title": "Beard Trim", "description": "Shape, clean lines and nourishing products for your beard."},
+      "shave": {"title": "Traditional Shave", "description": "Hot towel, razor shave, aftershave and a calm finish."},
+      "package": {"title": "Premium Grooming Package", "description": "The full experience: haircut, beard, shave and styling."}
+    }
+  },
+  "aboutPage": {
+    "eyebrow": "About us",
+    "title": "A shop rooted in classic craft",
+    "intro": "Athenian Blade was built to combine old-school barbering with modern service and a clean visual identity.",
+    "story": {"title": "Our story", "text": "We started in Athens to create a space where clients find consistency, quality and atmosphere without unnecessary noise."},
+    "certs": {"title": "Experience and certifications", "text": "The team trains continuously in fades, classic cuts, hygiene standards and premium grooming protocols."},
+    "standards": {"title": "Professional standards", "text": "We use trusted products, sterilized tools and processes that keep every service consistent."},
+    "masterBarber": "Master barber"
+  },
+  "galleryPage": {
+    "eyebrow": "Gallery",
+    "title": "Cuts, shaves and details",
+    "items": ["Fade result", "Barber station", "Modern grooming", "Traditional shop", "Beard detail", "Premium care"]
+  },
+  "reservationsPage": {
+    "eyebrow": "Online reservations",
+    "title": "Book your next appointment",
+    "intro": "Choose service, barber, date and available slot. Real payments, emails and calendar sync connect from the backend."
+  },
+  "booking": {
+    "service": "Service",
+    "barber": "Barber",
+    "date": "Date",
+    "slot": "Time",
+    "name": "Full name",
+    "phone": "Phone",
+    "email": "Email",
+    "notes": "Notes",
+    "confirm": "Confirm reservation",
+    "success": "Your booking was saved as pending. You will receive confirmation.",
+    "services": {
+      "haircut": "Haircut",
+      "beard": "Beard Trim",
+      "shave": "Traditional Shave",
+      "package": "Premium Grooming Package"
+    }
+  },
+  "contactPage": {
+    "eyebrow": "Contact",
+    "title": "Talk to us",
+    "intro": "For partnerships, appointment changes or special grooming requests.",
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send"
+  },
+  "admin": {
+    "eyebrow": "Admin dashboard",
+    "title": "Appointment management",
+    "customer": "Customer",
+    "service": "Service",
+    "barber": "Barber",
+    "date": "Date",
+    "status": "Status",
+    "actions": "Actions",
+    "approve": "Approve",
+    "cancel": "Cancel",
+    "empty": "No bookings exist on this device yet.",
+    "barbers": {"title": "Barbers", "text": "Team and shift CRUD connects here."},
+    "services": {"title": "Services", "text": "Manage prices, duration and active services."},
+    "hours": {"title": "Working hours", "text": "Set schedules per barber and day."},
+    "blocked": {"title": "Blocked dates", "text": "Holidays, leave and unavailable slots."}
+  }
+}

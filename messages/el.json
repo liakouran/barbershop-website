@@ -1,0 +1,155 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Athenian Blade | Premium Barbershop στην Αθήνα",
+      "description": "Κλασική τέχνη κουρέματος, premium grooming και online κρατήσεις για σύγχρονους άνδρες στην Ελλάδα."
+    }
+  },
+  "nav": {
+    "services": "Υπηρεσίες",
+    "about": "Σχετικά",
+    "gallery": "Gallery",
+    "reservations": "Κρατήσεις",
+    "contact": "Επικοινωνία",
+    "book": "Κράτηση"
+  },
+  "hero": {
+    "eyebrow": "Premium barbershop στην Αθήνα",
+    "title": "Κοφτερή τεχνική. Ήρεμη πολυτέλεια.",
+    "subtitle": "Στο Athenian Blade κάθε κούρεμα, ξύρισμα και grooming ritual γίνεται με ακρίβεια, καθαρότητα και σεβασμό στον χρόνο σου.",
+    "book": "Κλείσε ραντεβού",
+    "services": "Δες υπηρεσίες"
+  },
+  "home": {
+    "servicesEyebrow": "Signature services",
+    "servicesTitle": "Περιποίηση με χαρακτήρα",
+    "servicesIntro": "Από καθαρό fade μέχρι traditional shave, οι υπηρεσίες μας είναι σχεδιασμένες για άψογο αποτέλεσμα και σταθερή εμπειρία.",
+    "services": {
+      "haircut": {"title": "Haircut", "description": "Συμβουλευτική, λούσιμο, precision cut και styling."},
+      "beard": {"title": "Beard Trim", "description": "Σχηματισμός γενειάδας με ζεστή πετσέτα και balm."},
+      "shave": {"title": "Traditional Shave", "description": "Κλασικό ξύρισμα με φαλτσέτα και aftercare."},
+      "package": {"title": "Premium Grooming", "description": "Ολοκληρωμένο κούρεμα, beard work, shave και styling."}
+    },
+    "aboutEyebrow": "Why choose us",
+    "aboutTitle": "Πειθαρχία, τέχνη, ατμόσφαιρα",
+    "aboutIntro": "Ένας χώρος φτιαγμένος για ανθρώπους που θέλουν σταθερή ποιότητα, καθαρές γραμμές και προσωπική εξυπηρέτηση.",
+    "why": {
+      "craft": {"title": "Master τεχνική", "text": "Barbers με εμπειρία σε fades, scissor cuts, beard design και classic shaving."},
+      "hygiene": {"title": "Απόλυτη υγιεινή", "text": "Αποστειρωμένα εργαλεία, καθαροί σταθμοί και premium προϊόντα σε κάθε ραντεβού."},
+      "experience": {"title": "Άνετη κράτηση", "text": "Διαλέγεις υπηρεσία, barber, ημερομηνία και ώρα σε λίγα βήματα."}
+    }
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "Λεπτομέρειες που φαίνονται",
+    "intro": "Ενδεικτικά looks, textures και grooming moments από το shop.",
+    "items": ["Κούρεμα fade", "Classic station", "Beard shaping", "Barber tools"]
+  },
+  "testimonials": {
+    "eyebrow": "Google reviews",
+    "title": "Σταθερά ραντεβού, σταθερό αποτέλεσμα",
+    "intro": "Οι πελάτες επιστρέφουν για την ακρίβεια, την ατμόσφαιρα και την καθαρή εξυπηρέτηση.",
+    "items": [
+      {"quote": "Άψογη δουλειά, προσοχή στη λεπτομέρεια και πολύ ωραίος χώρος.", "name": "Γιώργος Μ."},
+      {"quote": "Το καλύτερο beard trim που έχω κάνει. Κλείνω πλέον μόνο online.", "name": "Παναγιώτης Κ."},
+      {"quote": "Premium εμπειρία χωρίς υπερβολές. Στην ώρα τους και πολύ επαγγελματίες.", "name": "Νίκος Α."}
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Βρες μας στο κέντρο της Αθήνας",
+    "intro": "Κλείσε online, στείλε μήνυμα στο WhatsApp ή πέρασε από το shop.",
+    "address": "Σόλωνος 25, Αθήνα 106 73",
+    "hours": {
+      "weekdays": "Δευτέρα - Παρασκευή: 10:00 - 20:00",
+      "saturday": "Σάββατο: 10:00 - 18:00",
+      "sunday": "Κυριακή: Κλειστά"
+    }
+  },
+  "footer": {
+    "tagline": "Premium barber shop εμπειρία με ελληνική φιλοξενία, ευρωπαϊκή ακρίβεια και σύγχρονη online κράτηση.",
+    "services": "Υπηρεσίες",
+    "reservations": "Κρατήσεις",
+    "contact": "Επικοινωνία"
+  },
+  "cookies": {
+    "text": "Χρησιμοποιούμε απαραίτητα cookies για λειτουργία, γλώσσα και βελτίωση εμπειρίας σύμφωνα με το GDPR.",
+    "accept": "Αποδοχή"
+  },
+  "servicesPage": {
+    "eyebrow": "Services",
+    "title": "Τιμοκατάλογος",
+    "intro": "Διαφανείς τιμές, διάρκεια υπηρεσίας και άμεση πρόσβαση στην online κράτηση.",
+    "cta": "Κλείσε υπηρεσία",
+    "items": {
+      "haircut": {"title": "Haircut", "description": "Κούρεμα με συμβουλευτική, λούσιμο και styling για καθημερινή χρήση."},
+      "beard": {"title": "Beard Trim", "description": "Σχηματισμός, καθαρές γραμμές και προϊόντα θρέψης για τη γενειάδα."},
+      "shave": {"title": "Traditional Shave", "description": "Ζεστή πετσέτα, φαλτσέτα, aftershave και ήρεμο τελείωμα."},
+      "package": {"title": "Premium Grooming Package", "description": "Η πλήρης εμπειρία: κούρεμα, γενειάδα, ξύρισμα και styling."}
+    }
+  },
+  "aboutPage": {
+    "eyebrow": "About us",
+    "title": "Ένα shop με ρίζες στην κλασική τέχνη",
+    "intro": "Το Athenian Blade χτίστηκε για να ενώσει την παλιά σχολή του barbering με σύγχρονη εξυπηρέτηση και καθαρή αισθητική.",
+    "story": {"title": "Η ιστορία μας", "text": "Ξεκινήσαμε στην Αθήνα με στόχο έναν χώρο όπου ο πελάτης βρίσκει συνέπεια, ποιότητα και ατμόσφαιρα χωρίς περιττή φασαρία."},
+    "certs": {"title": "Εμπειρία και πιστοποιήσεις", "text": "Η ομάδα εκπαιδεύεται συνεχώς σε fades, classic cuts, hygiene standards και premium grooming protocols."},
+    "standards": {"title": "Επαγγελματικά standards", "text": "Χρησιμοποιούμε αξιόπιστα προϊόντα, αποστειρωμένα εργαλεία και διαδικασίες που κρατούν κάθε υπηρεσία σταθερή."},
+    "masterBarber": "Master barber"
+  },
+  "galleryPage": {
+    "eyebrow": "Gallery",
+    "title": "Cuts, shaves και λεπτομέρειες",
+    "items": ["Fade αποτέλεσμα", "Barber station", "Modern grooming", "Traditional shop", "Beard detail", "Premium care"]
+  },
+  "reservationsPage": {
+    "eyebrow": "Online reservations",
+    "title": "Κλείσε το επόμενο ραντεβού σου",
+    "intro": "Επίλεξε υπηρεσία, barber, ημερομηνία και διαθέσιμο slot. Οι πραγματικές πληρωμές, emails και calendar sync συνδέονται από το backend."
+  },
+  "booking": {
+    "service": "Υπηρεσία",
+    "barber": "Barber",
+    "date": "Ημερομηνία",
+    "slot": "Ώρα",
+    "name": "Ονοματεπώνυμο",
+    "phone": "Τηλέφωνο",
+    "email": "Email",
+    "notes": "Σημειώσεις",
+    "confirm": "Επιβεβαίωση κράτησης",
+    "success": "Η κράτηση καταχωρήθηκε ως pending. Θα λάβεις επιβεβαίωση.",
+    "services": {
+      "haircut": "Haircut",
+      "beard": "Beard Trim",
+      "shave": "Traditional Shave",
+      "package": "Premium Grooming Package"
+    }
+  },
+  "contactPage": {
+    "eyebrow": "Contact",
+    "title": "Μίλησέ μας",
+    "intro": "Για συνεργασίες, αλλαγές ραντεβού ή ειδικά grooming requests.",
+    "name": "Ονοματεπώνυμο",
+    "email": "Email",
+    "phone": "Τηλέφωνο",
+    "message": "Μήνυμα",
+    "send": "Αποστολή"
+  },
+  "admin": {
+    "eyebrow": "Admin dashboard",
+    "title": "Διαχείριση κρατήσεων",
+    "customer": "Πελάτης",
+    "service": "Υπηρεσία",
+    "barber": "Barber",
+    "date": "Ημερομηνία",
+    "status": "Κατάσταση",
+    "actions": "Ενέργειες",
+    "approve": "Approve",
+    "cancel": "Cancel",
+    "empty": "Δεν υπάρχουν ακόμα κρατήσεις σε αυτή τη συσκευή.",
+    "barbers": {"title": "Barbers", "text": "Εδώ συνδέεται CRUD για ομάδα και βάρδιες."},
+    "services": {"title": "Services", "text": "Διαχείριση τιμών, διάρκειας και ενεργών υπηρεσιών."},
+    "hours": {"title": "Working hours", "text": "Ρύθμιση ωραρίων ανά barber και ημέρα."},
+    "blocked": {"title": "Blocked dates", "text": "Αργίες, άδειες και unavailable slots."}
+  }
+}
