@@ -33,7 +33,7 @@ export async function POST(request: Request) {
 
     if (payload.status === 'cancelled') {
       const html = await loadTemplate(
-        `appointment-cancelled.${locale}.html`,
+        `appointment-cancellation.${locale}.html`,
         {
           name: payload.name,
           service: payload.service,
