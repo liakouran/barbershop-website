@@ -25,7 +25,7 @@ export default async function ContactBand() {
         </div>
         <iframe
           title="Thessaloniki map"
-          src="https://www.google.com/maps?q=Athens%20Greece&output=embed"
+          src="https://www.google.com/maps/place/numa+hair+salon/@40.63721,22.9492071,17.21z/data=!4m6!3m5!1s0x14a839397ce3b2d1:0x611c61348de8b85b!8m2!3d40.6373355!4d22.94919!16s%2Fg%2F11z5bwd1n_!5m2!1e4!1e2?entry=ttu&g_ep=EgoyMDI2MDYwMi4wIKXMDSoASAFQAw%3D%3D"
           className="min-h-96 w-full border-0 grayscale"
           loading="lazy"
         />
