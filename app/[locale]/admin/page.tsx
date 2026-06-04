@@ -57,6 +57,25 @@ export default function AdminPage() {
     }
   }
 
+  function deleteAppointment(id: string) {
+    const confirmed = window.confirm(
+      'Are you sure you want to delete this reservation?'
+    );
+
+    if (!confirmed) return;
+
+    const next = appointments.filter(
+      (appointment) => appointment.id !== id
+    );
+
+    setAppointments(next);
+
+    localStorage.setItem(
+      'appointments',
+      JSON.stringify(next)
+    );
+  }
+
   return (
     <section className="mx-auto max-w-7xl px-5 py-32 md:px-8">
       <p className="text-sm uppercase tracking-[0.28em] text-gold">{t('eyebrow')}</p>
@@ -83,8 +102,30 @@ export default function AdminPage() {
                   <td className="p-3">{appointment.date} {appointment.slot}</td>
                   <td className="p-3 text-gold">{appointment.status}</td>
                   <td className="flex gap-2 p-3">
-                    <button onClick={() => setStatus(appointment.id, 'approved')} className="luxury-border px-3 py-2">{t('approve')}</button>
-                    <button onClick={() => setStatus(appointment.id, 'cancelled')} className="luxury-border px-3 py-2">{t('cancel')}</button>
+                    <td className="flex gap-2 p-3">
+                      <button
+                        onClick={() => setStatus(appointment.id, 'approved')}
+                        className="luxury-border px-3 py-2"
+                      >
+                        {t('approve')}
+                      </button>
+
+                      <button
+                        onClick={() => setStatus(appointment.id, 'cancelled')}
+                        className="luxury-border px-3 py-2"
+                      >
+                        {t('cancel')}
+                      </button>
+
+                      {appointment.status !== 'pending' && (
+                        <button
+                          onClick={() => deleteAppointment(appointment.id)}
+                          className="luxury-border px-3 py-2 text-red-500 border-red-500"
+                        >
+                          Delete
+                        </button>
+                      )}
+                    </td>
                   </td>
                 </tr>
               ))}
