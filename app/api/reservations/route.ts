@@ -35,13 +35,10 @@ export async function POST(request: Request) {
   const locale = payload.locale === 'en' ? 'en' : 'el';
 
   const customerHtml = await loadTemplate(
-    `appointment-confirmation.${locale}.html`,
+    `appointment-pending.${locale}.html`,
     {
       name: parsed.data.name,
-      service: parsed.data.service,
-      barber: parsed.data.barber,
-      date: parsed.data.date,
-      time: parsed.data.slot
+      service: parsed.data.service
     }
   );
 
@@ -51,8 +48,8 @@ export async function POST(request: Request) {
       to: parsed.data.email,
       subject:
         locale === 'en'
-          ? `Appointment Confirmed - ${parsed.data.date} ${parsed.data.slot}`
-          : `Επιβεβαίωση Ραντεβού - ${parsed.data.date} ${parsed.data.slot}`,
+          ? 'Booking Request Received'
+          : 'Το Αίτημα Κράτησής Σας Παραλήφθηκε',
       html: customerHtml
     });
 
