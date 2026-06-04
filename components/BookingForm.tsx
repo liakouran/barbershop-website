@@ -39,11 +39,48 @@ export default function BookingForm() {
     setConfirmed(false);
   }
 
-  function submit(event: React.FormEvent<HTMLFormElement>) {
+  async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const existing = JSON.parse(localStorage.getItem('appointments') || '[]');
-    localStorage.setItem('appointments', JSON.stringify([{...booking, status: 'pending', id: crypto.randomUUID()}, ...existing]));
-    setConfirmed(true);
+
+    try {
+      const response = await fetch('/api/reservations', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          ...booking,
+          locale: document.documentElement.lang || 'el'
+        })
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        console.error('Reservation error:', data);
+        alert('Booking failed');
+        return;
+      }
+
+      const existing = JSON.parse(
+        localStorage.getItem('appointments') || '[]'
+      );
+
+      localStorage.setItem(
+        'appointments',
+        JSON.stringify([
+          data.appointment,
+          ...existing
+        ])
+      );
+
+      setConfirmed(true);
+
+      console.log('Reservation created:', data);
+    } catch (error) {
+      console.error('Submit error:', error);
+      alert('Server error');
+    }
   }
 
   return (
