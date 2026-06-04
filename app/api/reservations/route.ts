@@ -45,37 +45,34 @@ export async function POST(request: Request) {
     }
   );
 
-  await resend.emails.send({
-    from: 'Bookings <onboarding@resend.dev>',
-    to: parsed.data.email,
-    subject:
-      locale === 'en'
-        ? 'Appointment Confirmation'
-        : 'Επιβεβαίωση Κράτησης',
-    html: customerHtml
-  });
+  try {
+    const result = await resend.emails.send({
+      from: 'Bookings <onboarding@resend.dev>',
+      to: parsed.data.email,
+      subject:
+        locale === 'en'
+          ? 'Appointment Confirmation'
+          : 'Επιβεβαίωση Κράτησης',
+      html: customerHtml
+    });
 
-  await resend.emails.send({
-    from: 'Bookings <onboarding@resend.dev>',
-    to: process.env.ADMIN_EMAIL!,
-    subject: 'Νέα Κράτηση',
-    html: `
-      <h2>Νέα Κράτηση</h2>
+    console.log('CUSTOMER EMAIL RESULT:', result);
+  } catch (error) {
+    console.error('CUSTOMER EMAIL ERROR:', error);
+  }
 
-      <p><strong>Πελάτης:</strong> ${parsed.data.name}</p>
-      <p><strong>Email:</strong> ${parsed.data.email}</p>
-      <p><strong>Τηλέφωνο:</strong> ${parsed.data.phone}</p>
+  try {
+    const result = await resend.emails.send({
+      from: 'Bookings <onboarding@resend.dev>',
+      to: process.env.ADMIN_EMAIL!,
+      subject: 'Νέα Κράτηση',
+      html: '...'
+    });
 
-      <hr />
-
-      <p><strong>Υπηρεσία:</strong> ${parsed.data.service}</p>
-      <p><strong>Barber:</strong> ${parsed.data.barber}</p>
-      <p><strong>Ημερομηνία:</strong> ${parsed.data.date}</p>
-      <p><strong>Ώρα:</strong> ${parsed.data.slot}</p>
-
-      <p><strong>Σημειώσεις:</strong> ${parsed.data.notes ?? '-'}</p>
-    `
-  });
+    console.log('ADMIN EMAIL RESULT:', result);
+  } catch (error) {
+    console.error('ADMIN EMAIL ERROR:', error);
+  }
 
   return NextResponse.json({
     ok: true,
