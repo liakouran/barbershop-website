@@ -13,6 +13,7 @@ type Appointment = {
   phone: string;
   email: string;
   status: string;
+  locale?: string;
 };
 
 export default function AdminPage() {
@@ -23,10 +24,37 @@ export default function AdminPage() {
     setAppointments(JSON.parse(localStorage.getItem('appointments') || '[]'));
   }, []);
 
-  function setStatus(id: string, status: string) {
-    const next = appointments.map((appointment) => (appointment.id === id ? {...appointment, status} : appointment));
-    setAppointments(next);
-    localStorage.setItem('appointments', JSON.stringify(next));
+  async function setStatus(id: string, status: string) {
+  const appointment = appointments.find(a => a.id === id);
+
+  if (!appointment) return;
+
+    try {
+      await fetch('/api/reservations/status', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          ...appointment,
+          status
+        })
+      });
+
+      const next = appointments.map((a) =>
+        a.id === id
+          ? { ...a, status }
+          : a
+      );
+
+      setAppointments(next);
+      localStorage.setItem(
+        'appointments',
+        JSON.stringify(next)
+      );
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   return (

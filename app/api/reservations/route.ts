@@ -51,8 +51,8 @@ export async function POST(request: Request) {
       to: parsed.data.email,
       subject:
         locale === 'en'
-          ? 'Appointment Confirmation'
-          : 'Επιβεβαίωση Κράτησης',
+          ? `Appointment Confirmed - ${parsed.data.date} ${parsed.data.slot}`
+          : `Επιβεβαίωση Ραντεβού - ${parsed.data.date} ${parsed.data.slot}`,
       html: customerHtml
     });
 
@@ -66,7 +66,25 @@ export async function POST(request: Request) {
       from: 'Bookings <onboarding@resend.dev>',
       to: process.env.ADMIN_EMAIL!,
       subject: 'Νέα Κράτηση',
-      html: '...'
+      html: `
+        <h2>Νέα Κράτηση</h2>
+
+        <p><strong>Όνομα:</strong> ${parsed.data.name}</p>
+        <p><strong>Τηλέφωνο:</strong> ${parsed.data.phone}</p>
+        <p><strong>Email:</strong> ${parsed.data.email}</p>
+
+        <hr />
+
+        <p><strong>Υπηρεσία:</strong> ${parsed.data.service}</p>
+        <p><strong>Barber:</strong> ${parsed.data.barber}</p>
+        <p><strong>Ημερομηνία:</strong> ${parsed.data.date}</p>
+        <p><strong>Ώρα:</strong> ${parsed.data.slot}</p>
+
+        <hr />
+
+        <p><strong>Σημειώσεις:</strong></p>
+        <p>${parsed.data.notes || 'Δεν υπάρχουν σημειώσεις'}</p>
+      `
     });
 
     console.log('ADMIN EMAIL RESULT:', result);

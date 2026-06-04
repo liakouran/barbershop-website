@@ -13,6 +13,7 @@ type Booking = {
   phone: string;
   email: string;
   notes: string;
+  locale: string;
 };
 
 const initialBooking: Booking = {
@@ -23,7 +24,8 @@ const initialBooking: Booking = {
   name: '',
   phone: '',
   email: '',
-  notes: ''
+  notes: '',
+  locale: 'el'
 };
 
 export default function BookingForm() {
@@ -42,6 +44,11 @@ export default function BookingForm() {
   async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
+    const locale =
+      window.location.pathname.startsWith('/en')
+        ? 'en'
+        : 'el';
+
     try {
       const response = await fetch('/api/reservations', {
         method: 'POST',
@@ -50,7 +57,7 @@ export default function BookingForm() {
         },
         body: JSON.stringify({
           ...booking,
-          locale: document.documentElement.lang || 'el'
+          locale
         })
       });
 
