@@ -1,5 +1,5 @@
 import { resend } from '@/lib/resend';
-import { loadTemplate } from '@/lib/email-template';
+import { loadTemplate } from '@/lib/email-templates';
 import {NextResponse} from 'next/server';
 import {z} from 'zod';
 
