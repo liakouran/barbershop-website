@@ -37,7 +37,7 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
       addressCountry: 'GR'
     },
     telephone: '+302310241484',
-    priceRange: 'EUR 18-55',
+    priceRange: 'EUR 8-35',
     openingHours: ['Mo-Fr 10:00-20:00', 'Sa 10:00-18:00'],
     url: `https://numahairsalon.gr/${locale}`
   };
