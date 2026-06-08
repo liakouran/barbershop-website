@@ -1,6 +1,6 @@
 import type {MetadataRoute} from 'next';
 
-const baseUrl = 'https://athenianblade.gr';
+const baseUrl = 'https://numahairsalon.gr';
 const locales = ['el', 'en'];
 const routes = ['', '/services', '/about', '/gallery', '/reservations', '/contact'];
 

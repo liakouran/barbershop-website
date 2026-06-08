@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/el/admin', '/en/admin']
     },
-    sitemap: 'https://athenianblade.gr/sitemap.xml'
+    sitemap: 'https://numahairsalon.gr/sitemap.xml'
   };
 }

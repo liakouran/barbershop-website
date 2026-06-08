@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Athenian Blade Barbershop',
     short_name: 'Athenian Blade',
-    description: 'Premium barber shop reservations in Athens.',
+    description: 'Premium barber shop reservations in Thessaloniki.',
     start_url: '/el',
     display: 'standalone',
     background_color: '#080808',

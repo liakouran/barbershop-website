@@ -14,7 +14,7 @@ const sans = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Athenian Blade Barbershop',
+  title: 'Numa Hair Salon',
   description: 'Premium barber shop experience in Greece.'
 };
 

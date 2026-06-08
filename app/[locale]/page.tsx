@@ -39,7 +39,7 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
     telephone: '+302310241484',
     priceRange: 'EUR 18-55',
     openingHours: ['Mo-Fr 10:00-20:00', 'Sa 10:00-18:00'],
-    url: `https://athenianblade.gr/${locale}`
+    url: `https://numahairsalon.gr/${locale}`
   };
 
   return (
