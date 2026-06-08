@@ -1,11 +1,11 @@
 export const services = [
-  {key: 'haircut', price: '25 EUR', duration: '45 min'},
-  {key: 'beard', price: '18 EUR', duration: '30 min'},
-  {key: 'shave', price: '22 EUR', duration: '35 min'},
-  {key: 'package', price: '55 EUR', duration: '90 min'}
+  {key: 'haircut', price: '15 EUR', duration: '45 min'},
+  {key: 'beard', price: '8 EUR', duration: '30 min'},
+  {key: 'shave', price: '12 EUR', duration: '35 min'},
+  {key: 'package', price: '35 EUR', duration: '90 min'}
 ] as const;
 
-export const barbers = ['Nikos', 'Alexandros', 'Marios'];
+export const barbers = ['Kwstas', 'Alexandros', 'Marios'];
 
 export const slots = ['10:00', '10:45', '11:30', '12:15', '14:00', '14:45', '15:30', '16:15', '17:00', '17:45'];
 

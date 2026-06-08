@@ -1,7 +1,7 @@
 {
   "metadata": {
     "home": {
-      "title": "Athenian Blade | Premium Barbershop in Athens",
+      "title": "Numa Hair Salon | Premium Barbershop in Thessaloniki",
       "description": "Classic barbering, premium grooming and online reservations for modern men in Greece."
     }
   },
@@ -14,9 +14,9 @@
     "book": "Book"
   },
   "hero": {
-    "eyebrow": "Premium barbershop in Athens",
+    "eyebrow": "Premium barbershop in Thessaloniki",
     "title": "Sharp craft. Quiet luxury.",
-    "subtitle": "At Athenian Blade every haircut, shave and grooming ritual is delivered with precision, cleanliness and respect for your time.",
+    "subtitle": "At Numa Hair Salon every haircut, shave and grooming ritual is delivered with precision, cleanliness and respect for your time.",
     "book": "Book appointment",
     "services": "View services"
   },
@@ -57,9 +57,9 @@
   },
   "contact": {
     "eyebrow": "Contact",
-    "title": "Find us in central Athens",
+    "title": "Find us in central Thessaloniki",
     "intro": "Book online, message us on WhatsApp or visit the shop.",
-    "address": "25 Solonos Street, Athens 106 73",
+    "address": "25 Solonos Street, Thessaloniki 106 73",
     "hours": {
       "weekdays": "Monday - Friday: 10:00 - 20:00",
       "saturday": "Saturday: 10:00 - 18:00",
@@ -91,8 +91,8 @@
   "aboutPage": {
     "eyebrow": "About us",
     "title": "A shop rooted in classic craft",
-    "intro": "Athenian Blade was built to combine old-school barbering with modern service and a clean visual identity.",
-    "story": {"title": "Our story", "text": "We started in Athens to create a space where clients find consistency, quality and atmosphere without unnecessary noise."},
+    "intro": "Numa Hair Salon was built to combine old-school barbering with modern service and a clean visual identity.",
+    "story": {"title": "Our story", "text": "We started in Thessaloniki to create a space where clients find consistency, quality and atmosphere without unnecessary noise."},
     "certs": {"title": "Experience and certifications", "text": "The team trains continuously in fades, classic cuts, hygiene standards and premium grooming protocols."},
     "standards": {"title": "Professional standards", "text": "We use trusted products, sterilized tools and processes that keep every service consistent."},
     "masterBarber": "Master barber"

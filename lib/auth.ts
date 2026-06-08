@@ -21,7 +21,7 @@ export const authOptions: NextAuthOptions = {
 
         if (!adminEmail || !adminPassword) return null;
         if (credentials?.email === adminEmail && credentials.password === adminPassword) {
-          return {id: 'admin', email: adminEmail, name: 'Athenian Blade Admin'};
+          return {id: 'admin', email: adminEmail, name: 'Numa Hair Salon admin'};
         }
 
         return null;

@@ -27,16 +27,16 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Barbershop',
-    name: 'Athenian Blade Barbershop',
+    name: 'Numa Hair Salon',
     image: 'https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1600&q=85',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '25 Solonos Street',
-      addressLocality: 'Athens',
-      postalCode: '10673',
+      streetAddress: 'Ἁγ. Δημητρίου 118',
+      addressLocality: 'Thessaloniki',
+      postalCode: '54631',
       addressCountry: 'GR'
     },
-    telephone: '+302100000000',
+    telephone: '+302310241484',
     priceRange: 'EUR 18-55',
     openingHours: ['Mo-Fr 10:00-20:00', 'Sa 10:00-18:00'],
     url: `https://athenianblade.gr/${locale}`
